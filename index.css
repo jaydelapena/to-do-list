@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #ddd;
+    align-items: center;
+}
+
+header {
+    background-color: #32325b;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.top-bar h1 {
+    font-size: 20px;
+    margin: 0;
+    align-items: center;
+}
+
+.top-bar input[type="text"] {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.task-list {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+.task-list h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.task-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.task-list li {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.add-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-task input[type="text"] {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 10px;nav-up: ;
+    font-size: 16px;
+    flex-grow: 1;
+    border-radius: 5px;
+}
+
+.add-task button {
+    background-color: #32325b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-task {
+    background-color: #32325b; /* Same blue color as "Add" button */
+    color: #fff;
+    padding: 5px 10px; /* Adjust padding for smaller button size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .mark-done {
+    background-color: #32325b; /* Same blue color as "Add" button */
+    color: #fff;
+    padding: 5px 10px; /* Adjust padding for smaller button size */
+    border: none;
+    border-radius: 5px;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  /* Media Queries for Responsive Buttons */
+@media (max-width: 768px) {
+    .task-list li button { /* Target buttons within list items on smaller screens */
+      padding: 5px 10px; /* Adjust padding for smaller buttons */
+    }
+    .add-task button { /* Target "Add" button on smaller screens */
+      padding: 8px 15px; /* Adjust padding for smaller button */
+    }
+  }
+
+.task-list li.done {
+    text-decoration: line-through;
+}
